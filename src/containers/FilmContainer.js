@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import FilmList from '../components/FilmList';
 
 class FilmContainer extends Component {
 
@@ -23,7 +24,8 @@ class FilmContainer extends Component {
                 },
                 {
                     id: 4,
-                    name: "The Lego Movie 2: The Second Part", url: "https://www.imdb.com/title/tt3513498/?ref_=rlm"
+                    name: "The Lego Movie 2: The Second Part", 
+                    url: "https://www.imdb.com/title/tt3513498/?ref_=rlm"
                 },
                 {
                     id: 5,
@@ -37,8 +39,11 @@ class FilmContainer extends Component {
     render() {
         return (
             <div className="film-container">
-                <h2>Films</h2>
+                <h2>Upcoming Film Releases for UK</h2>
                 <FilmList data={this.state.data} />
+                <a href="https://www.imdb.com/calendar/?region=gb">
+                    <h3>View more upcoming releases >></h3>
+                </a>
             </div>
         )
     }

@@ -6,8 +6,9 @@ class Film extends Component {
 
         return (
             <div className="film">
-                {/* .children refers to the content of the Film tag in FilmList */}
-                <link href={this.props.url}>{this.props.children}</link>
+                <a href={this.props.href}>
+                    <li>{this.props.children}</li>
+                </a>
             </div>
         )
 
